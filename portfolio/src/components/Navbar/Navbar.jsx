@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useTranslation } from 'react-i18next';
 import Switcher7 from '../Switcher/Switcher';
 import {useState, useEffect} from 'react';
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -10,7 +11,6 @@ function classNames(...classes) {
 
 export default function Navbar() {
 
-  
   const { t } = useTranslation()
 
   const [scrolled, setScrolled] = useState(false);
@@ -60,9 +60,12 @@ export default function Navbar() {
               </div>
               <div className='w-full'>
                 <div className="flex flex-1 justify-start items-center ">
-                  <div className="flex flex-shrink-0">
-                    <a href="#home" className='xl:text-lg'>Facundo Recabarren</a>
-                  </div>
+                  <a target='_blank' href="https://drive.google.com/drive/folders/1nJU2zUh7txvSXc1FxxZp_w0DWRPa5WL2?usp=drive_link" className="hidden sm:flex flex-shrink-0 border-2 border-palette-600 hover:bg-palette-600 duration-500 cursor-pointer px-4 py-2 rounded-lg" rel="noreferrer" id='home'>
+                    <p className='xl:text-lg font-semibold flex gap-2'>Facundo Recabarren <FaExternalLinkAlt/></p>
+                  </a>
+                  <a target='_blank' href="https://drive.google.com/drive/folders/1nJU2zUh7txvSXc1FxxZp_w0DWRPa5WL2?usp=drive_link" className="sm:hidden flex flex-shrink-0 border-2 border-palette-600 hover:bg-palette-600 duration-500 cursor-pointer px-4 py-2 rounded-lg" rel="noreferrer" id='home'>
+                    <p className='xl:text-lg font-semibold flex gap-2'>{t("cv")} <FaExternalLinkAlt/></p>
+                  </a>
                   <div className="hidden lg:flex lg:justify-between lg:items-center lg:w-full lg:ml-6">
                     <div className="flex space-x-4 ml-7">
                       {navigation.map((item) => (

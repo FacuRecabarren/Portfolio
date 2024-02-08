@@ -3,5 +3,31 @@
     "about": "Sobre mí",
     "studies": "Estudios",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "cv": "Resumen",
+
+    "description": "¡Hola, soy Facundo Recabarren! Un apasionado desarrollador web con sede en Argentina.",
+
+    "grade1": "Tecnicatura",
+    "title1": "Técnico petroquímico",
+
+    "grade2": "Carrera",
+    "title2": "Desarrollador profesional",
+
+    "certificate": "Certificado",
+
+    "projectTitle": "Proyectos",
+
+    "contactTitle": "Contacto",
+    "consult": "¡Realizá tu consulta!",
+
+    "name": "Su nombre *",
+    "email": "Correo electrónico *",
+    "message": "Mensaje *",
+
+    "placeholderName": "Su nombre...",
+    "placeholderMail": "hola@ejemplo.com",
+    "placeholderMessage": "Su mensaje...",
+
+    "send": "Enviar mensaje"
 }

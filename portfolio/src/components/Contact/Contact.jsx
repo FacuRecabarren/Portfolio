@@ -19,6 +19,8 @@ const Contact = () => {
         email: '',
         message: ''
       })
+
+      console.log(data);
     
       const refForm = useRef();
     
@@ -32,11 +34,11 @@ const Contact = () => {
       const handleSubmit = (e) => {
           e.preventDefault();
     
-          const serviceId = ''
-          const templateId = ''
-          const publicKey = ''
+          const serviceId = 'service_1e58job'
+          const templateId = 'template_d2dy5qd'
+          const publicKey = '94sDCibUuaXwmSlcV'
     
-          emailjs.sendForm(serviceId, templateId, refForm.current, publicKey)
+          emailjs.sendForm(serviceId, templateId, refForm.current, publicKey, data)
             .then((result) => {
             Swal.fire({
               title: messageSuccess,
@@ -57,9 +59,9 @@ const Contact = () => {
       }
 
     return (
-        <div className='px-8 pt-10 lg:pt-24'>
+        <div className='px-8 pt-10 lg:pt-24 relative'>
           <div className="flex justify-center items-center">
-            <h2 className="text-2xl text-palette-500 font-bold border-b-2 rounded-lg border-palette-500 xl:text-4xl w-max">Contacto</h2>
+            <h2 className="text-2xl text-palette-500 font-bold border-b-2 rounded-lg border-palette-500 xl:text-4xl w-max">{t("contactTitle")}</h2>
           </div>
             <section className='flex flex-col justify-center items-center gap-5 pt-10 xl:pt-16 lg:flex-row'>
                 <div className='z-10 hidden lg:w-[35rem] lg:flex lg:justify-center lg:items-center' >
@@ -67,7 +69,7 @@ const Contact = () => {
                 </div>
                 <div className="bg-accent rounded-lg p-8 shadow-lg max-w-sm lg:w-1/3 z-10">
                     <form ref={refForm} onSubmit={handleSubmit}>
-                      <h2 className='text-center text-xl font-semibold'>¡Realizá tu consulta!</h2>
+                      <h2 className='text-center text-xl font-semibold'>{t("consult")}</h2>
                     <div className="mb-4 pt-5">
                         <label
                         htmlFor="username"
@@ -81,7 +83,7 @@ const Contact = () => {
                         id="username"
                         value={data.username}
                         onChange={handleChange}
-                        className="form-input w-full px-4 py-2 border text-gray-700 focus:outline-none focus:ring-2 focus:ring-palette-600 rounded-lg"
+                        className="form-input w-full px-2 py-2 border text-gray-700 focus:outline-none focus:ring-2 focus:ring-palette-600 rounded-lg"
                         required
                         placeholder={t("placeholderName")}
                         />
@@ -99,7 +101,7 @@ const Contact = () => {
                         id="email"
                         value={data.email}
                         onChange={handleChange}
-                        className="form-input w-full px-4 py-2 border text-gray-700 focus:outline-none focus:ring-2 focus:ring-palette-600 rounded-lg"
+                        className="form-input w-full px-2 py-2 border text-gray-700 focus:outline-none focus:ring-2 focus:ring-palette-600 rounded-lg"
                         required
                         placeholder={t("placeholderMail")}
                         />
@@ -130,6 +132,7 @@ const Contact = () => {
                     </form>
                 </div>
             </section>
+            
         </div>
     );
 };

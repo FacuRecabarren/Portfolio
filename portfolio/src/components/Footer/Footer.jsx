@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="https://github.com/FacuRecabarren" target="__blank">
                 <FaLinkedin className="text-3xl sm:text-2xl cursor-pointer hover:animate-rotate-center-opacity"/>
             </a>
-        </div> 
+        </div>
     </footer>
   )
 }

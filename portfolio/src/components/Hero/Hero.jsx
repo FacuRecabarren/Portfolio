@@ -4,26 +4,36 @@ import { SiTailwindcss, SiRedux, SiPostgresql, SiExpress, SiHibernate  } from "r
 import { FaJava } from "react-icons/fa6";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { SlArrowDown } from "react-icons/sl";
-import { FaMapPin } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
+import { useEffect } from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+
+  const { t } = useTranslation()
+
+  useEffect(()=>{
+    Aos.init({duration: 2500});
+  },[])
+
   return (
-    <div id="home" className="h-screen flex flex-col justify-center items-center gap-10 bg-background sm:flex-row sm:px-10 pt-16 sm:pt-0">
+    <div data-aos="fade" id="home" className="h-screen flex flex-col justify-center items-center gap-10 bg-background sm:flex-row sm:px-10 pt-16 sm:pt-0">
       <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1707401291/Portfolio%20FR/Polygon_Luminary_4_aiou4p.svg" alt="" className="absolute z-0 h-screen w-screen object-cover"/>
         <section className="flex flex-col justify-center items-center gap-8 xl:gap-12 sm:w-1/2 z-10">
-            <h1 id="titleDeveloper" className="text-center font-extrabold text-6xl xl:text-[5.5rem] text-palette-500 m-0">Full Stack Web Developer</h1>
-            <h2 className="text-center text-palette-200 font-light xl:text-2xl xl:px-8 px-5">¡Hola, soy Facundo Recabarren! Un apasionado desarrollador web con sede en Argentina.</h2>
+            <h1 id="titleDeveloper" className="text-center font-extrabold text-6xl lg:text-7xl xl:text-[5.5rem] text-palette-500 m-0">Full Stack Web Developer</h1>
+            <h2 className="text-center text-palette-200 font-light xl:text-2xl xl:px-8 px-5">{t("description")}</h2>
             <div className="flex justify-center items-center gap-3">
-                <IoLogoJavascript className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <IoLogoReact className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <SiRedux className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <IoLogoNodejs className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <SiExpress className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <SiTailwindcss className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <FaJava className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <BiLogoSpringBoot className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <SiHibernate className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
-                <SiPostgresql className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <IoLogoJavascript title="JavaScript" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <IoLogoReact title="ReactJs" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <SiRedux title="Redux" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <IoLogoNodejs title="NodeJs" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <SiExpress title="Express" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <SiTailwindcss title="Tailwind" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <FaJava title="Java" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <BiLogoSpringBoot title="SpringBoot" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <SiHibernate title="Hibernate" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
+                <SiPostgresql title="PostgreSQL" className="text-2xl lg:text-4xl cursor-pointer hover:animate-rotate-center-opacity text-palette-500"/>
             </div>
         </section>
         <section className="z-10">

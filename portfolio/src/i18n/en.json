@@ -3,5 +3,31 @@
     "about": "About",
     "studies": "Studies",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cv": "Resume",
+
+    "description": "Hi, I'm Facundo Recabarren! A passionate web developer based in Argentina.",
+
+    "grade1": "Technicatura",
+    "title1": "Petrochemical technician",
+
+    "grade2": "Career",
+    "title2": "Professional Developer",
+
+    "certificate": "Certificate",
+
+    "projectTitle": "Projects",
+
+    "contactTitle": "Contact",
+    "consult": "Make your inquiry!",
+
+    "name": "Your Name *",
+    "email": "Email Adress *",
+    "message": "Message *",
+
+    "placeholderName": "Your name...",
+    "placeholderMail": "hello@example.com",
+    "placeholderMessage": "Your message...",
+
+    "send": "Send message"
 }
