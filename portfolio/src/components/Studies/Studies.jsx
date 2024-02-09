@@ -25,7 +25,7 @@ const Studies = () => {
                     <h2 className="font-bold xl:text-2xl">{t("title1")}</h2>
                     <p className="xl:text-lg text-sm opacity-75 lg:h-[5rem] xl:h-full">Graduado de escuela secundaria Técnico Industrial Emilio Civit con el titulo de "Técnico en industrias de procesos con orientación en petróleo y petroquímica".</p>
                 </div>
-                <a href="" className="cursor-not-allowed flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg font-semibold  xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></a>
+                <p className="cursor-not-allowed flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg font-semibold  xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></p>
             </article>
             <article className="p-5 flex flex-col justify-center gap-4 lg:border-b-0 lg:w-[30rem]">
                 <div className="flex justify-between items-center gap-5 border-2 border-accent rounded-lg">
