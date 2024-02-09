@@ -18,7 +18,7 @@ const Hero = () => {
   },[])
 
   return (
-    <div data-aos="fade" id="home" className="h-screen flex flex-col justify-center items-center gap-10 bg-background sm:flex-row sm:px-10 pt-12 sm:pt-0">
+    <div data-aos="fade" id="home" className="h-screen flex flex-col justify-center items-center gap-10 bg-background sm:flex-row sm:px-10  sm:pt-0">
       <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1707401291/Portfolio%20FR/Polygon_Luminary_4_aiou4p.svg" alt="" className="absolute z-0 h-screen w-screen object-cover"/>
         <section className="flex flex-col justify-center items-center gap-8 xl:gap-12 sm:w-1/2 z-10">
             <h1 id="titleDeveloper" className="text-center font-extrabold text-5xl lg:text-7xl xl:text-[5.5rem] text-palette-500 m-0">Full Stack Web Developer</h1>
