@@ -25,7 +25,7 @@ const Studies = () => {
                     <h2 className="font-bold xl:text-2xl">{t("title1")}</h2>
                     <p className="xl:text-lg text-sm opacity-75 lg:h-[5rem] xl:h-full">Graduado de escuela secundaria Técnico Industrial Emilio Civit con el titulo de "Técnico en industrias de procesos con orientación en petróleo y petroquímica".</p>
                 </div>
-                <a href="" className="flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg cursor-pointer font-semibold transform hover:scale-105 duration-300 hover:opacity-80 xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></a>
+                <a href="" className="cursor-not-allowed flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg font-semibold  xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></a>
             </article>
             <article className="p-5 flex flex-col justify-center gap-4 lg:border-b-0 lg:w-[30rem]">
                 <div className="flex justify-between items-center gap-5 border-2 border-accent rounded-lg">
@@ -36,7 +36,7 @@ const Studies = () => {
                     <h2 className="font-bold xl:text-2xl">Full Stack Web Developer</h2>
                     <p className="xl:text-lg text-sm opacity-75 lg:h-[5rem] xl:h-full">Graduado como Full Stack Web Developer del bootcamp "Soy Henry", completando el programa de manera satisfactoria en un período de 4 meses.</p>
                 </div>
-                <a href="" className="flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg cursor-pointer font-semibold transform hover:scale-105 duration-300 hover:opacity-80 xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></a>
+                <a href="https://drive.google.com/file/d/1hNmMTOzhhzQrmg5zAn_j4V-h29RvHMZe/view?usp=drive_link" className="flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg cursor-pointer font-semibold transform hover:scale-105 duration-300 hover:opacity-80 xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></a>
             </article>
             <article className="p-5 flex flex-col justify-center gap-4 border-t-2 lg:border-t-0 lg:border-l-2 lg:w-[30rem]">
                 <div className="flex justify-between items-center gap-5 border-2 border-accent rounded-lg">
@@ -47,7 +47,7 @@ const Studies = () => {
                     <h2 className="font-bold xl:text-2xl">{t("title2")}</h2>
                     <p className="xl:text-lg text-sm opacity-75 lg:h-[5rem] xl:h-full">Graduado de la carrera Certified Tech Developer ofrecida por Digital House, Mercado Libre y Globant, la cual abarcó más de 1500 horas de teoría y práctica.</p>
                 </div>
-                <a href="" className="flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg cursor-pointer font-semibold transform hover:scale-105 duration-300 hover:opacity-80 xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></a>
+                <a href="https://drive.google.com/file/d/17wrwyWFC--A0dBaFiSfq39c4YxWcqBjz/view?usp=drive_link" className="flex justify-start items-center gap-2 bg-palette-600 w-max py-2 px-4 rounded-lg cursor-pointer font-semibold transform hover:scale-105 duration-300 hover:opacity-80 xl:text-xl shadow-sombra-btn-proyects">{t("certificate")} <FaExternalLinkAlt/></a>
             </article>
         </section>
     </div>
